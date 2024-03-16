@@ -1,0 +1,75 @@
+.h-container{
+    color:white;
+    background:transparent;
+    /* height:5%; */
+   
+    /* background-image: url(../img/1.jpg); */
+    
+}
+
+.h-container{
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+.h-menu{
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:black;
+    margin-right: 5rem;
+}
+.h-menu>*:hover{
+    cursor: pointer;
+    color:#20bf6b;
+}
+.Cimenu{
+    
+    display:none;
+}
+.h-change{
+    background-color: white;
+    color:black
+}
+.h-wrapper{
+    /* background-color: rgba(0,0,0, 0.05); */
+    /* background: transparent; */
+    /* position: relative; */
+    /* background-color: (0,0,0,0); */
+    /* width:100%; */
+    z-index:50;
+    position:fixed;
+    width:100%;
+    /* z-index:100; */
+    height: 4.5rem;
+    /* border: 0.5px solid #27ae60; */
+    box-shadow: 0 8px 16px rgba(13, 11, 11, 0.2);
+    /* background-color:rgba(0,0,0,0); */
+    /* padding:1rem; */
+    /* margin-left: 5rem; */
+}
+@media (max-width: 768px){
+    .Cimenu{
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+    .h-menu{
+        color: var(--black);
+        position: absolute;
+        top:3rem;
+        right: 4rem;
+        background: white;
+        flex-direction: column;
+        font-weight: 500;
+        gap: 2rem;
+        /* padding:  3rem; */
+        border-radius: 10px;
+        align-items: flex-start;
+        box-shadow: 0px 4px 4px rgba(0,0,0, 0.05);
+        transition: all 300ms ease-in;
+    }
+
+    
+}
