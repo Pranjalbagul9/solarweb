@@ -1,33 +1,45 @@
-/* .aboutus-img img{
-  width:100%;
-  height: 70vh;
-} */
-.aboutus{
-    width:100%;
-    height: 100vh;
+
+.inner-div{
+ width:90%;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ text-align: center;
+ margin: 20px auto;
+}
+.about-con{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about-section{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    background-color: white;
+    flex-wrap: wrap;
 }
-.aboutus img{
-    width: 70%;
-    height:55%;
-    margin: 2rem;
-    margin-top: -10rem;
-
+.about-img{
+    flex:1;
+    margin-right: 40px;
+    overflow: hidden;
 }
+.about-img img{
+    max-width:100% ;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-img:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex:1;
+}
+.about-content p{
+    font-size: 20px;
+    line-height: 1.2;
 
-.aboutcon{
-    width: 40%;
-    height: 68%;
-    margin-top: -9rem;
-    font-size: medium;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-    margin-right: 1rem;
-    margin-left: -10rem;
-    box-shadow: 0 8px 16px rgba(13, 11, 11, 0.2);
 }
 .aboutus-con{
     background: url(../img/1.jpg);
@@ -47,13 +59,30 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Adjust opacity here */
+    background: white;
 }
 
-.aboutus-con img {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
+.aboutus-div{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
+@media screen and (max-width: 768px){
+ .about-con{
+    padding: 0px;
+ }
+ .about-section{
+    padding:20px;
+    flex-direction: column;
+ }
+ .about-img{
+    margin-right: 0px;
+    margin-bottom: 20px;
+ }
+ .about-content p{
+    padding: 0px;
+    font-size:16px;
+    text-align: justify;
 
+ }
+}

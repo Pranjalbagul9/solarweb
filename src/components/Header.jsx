@@ -4,71 +4,64 @@ import { NavLink,Link } from 'react-router-dom';
 import logo from '../img/logo.png'
 import { CiMenuBurger } from "react-icons/ci";
 import OutsideClickHandler from 'react-outside-click-handler';
-import navimg from '../img/1.jpg'
-import AboutUs from './AboutUs';
-import ContactUs from './ContactUs';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
+
 
 const Header = () => {
-  function scrollToServices() {
-    var element = document.getElementById('services'); // Assuming the ID of the element you want to scroll to is 'services'
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-        console.error('Element with ID "services" not found');
-    }
-}
-
-    const [menuOpen, setMenuOpen] =useState(false);
-    const [navbar,setNavbar] = useState(false);
-    const getMenuStyles =(menuOpen) => {
-        if (document.documentElement.clientWidth <= 800)
-        {
-            return{right: !menuOpen && "-100%"}
-        }
-    }
-
-    // const changeBackground =() => {
-    //   if(window.scrollY >= 90) {
-    //     setNavbar(true)
-    //   } else {
-    //     setNavbar(false)
-    //   }
-    // };
-
-  // window.addEventListener('scroll', changeBackground);
+ 
 
   return (
-    <section className='h-wrapper wrapper' >
-        <div className='flexCenter h-container'>
-          <img src={logo} alt="logo"  
-          style={{width:'6%',height:'6%',marginLeft:'3rem'}}
-          />
-          <OutsideClickHandler
-          onOutsideClick={()=> {
-            setMenuOpen(false);
-          }}
+    <>
+     <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+
+   <div className="container-fluid">
+   <img src={logo} alt="" className='logo'/>
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon" />
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className={"navbar-nav ms-auto mb-lg-0 "}>
+        <li className="nav-item">
+         <Link to="/" style={{textDecoration:'none'}}>
+          <a className="nav-link " aria-current="page" href="/"
+         >
+             Home
+          </a>
+          </Link>
+        </li>
+        <li className="nav-item">
+            <Link to="/aboutus" style={{textDecoration:'none'}} >
+          <a className="nav-link "  aria-current="page" href="/" 
           >
-          <div className='flexCenter h-menu '
-          style={getMenuStyles(menuOpen)}
+            About Us
+          </a>
+          </Link>
+        </li>
+         < li className="nav-item">
+            <Link to="/contactus" style={{textDecoration:'none'}}>
+          <a className="nav-link " aria-current="page" href="/" 
           >
-           
-                
-            <Link to="/"><a href="">Home</a></Link>
-            {/* <a href="#services-section" onClick={scrollToServices} >Services</a> */}
-            <Link to="/aboutus"><a href="">About Us</a></Link>
-           <Link to="contactus"><a href="">Contact Us</a></Link> 
-            
-        </div>
-        {/* <hr style={{color:'#20bf6b',border:'4px solid',width:'100%',margin:'0 auto'}}/> */}
-        </OutsideClickHandler>
-       
-        <div className='Cimenu ' onClick={() =>setMenuOpen((prev) =>!prev)}>
-            <CiMenuBurger size={30}/>
-          </div>
-        </div>
-       
-    </section>
+            Contact Us
+          </a>
+          </Link>
+        </li>
+      </ul>
+    
+    </div>
+
+  </div>
+  <div>
+  
+  </div>
+</nav> 
+  </>
+  
   )
 }
 

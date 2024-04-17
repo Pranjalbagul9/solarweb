@@ -26,6 +26,9 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-size:1.8rem;
+    margin-left:28rem;
+    font-weight:600;
 }
 .cards {
     display: flex;
@@ -123,45 +126,34 @@
     filter: blur(10px);
     transform: scale(0.9, 0.9);
   }
+  .secondaryText{
+    color:black;
+    font-size:large;
+    margin-bottom:4rem;
+    margin-left:20rem;
+  }
  
-/* .accordion{
-    margin-top: 1rem;
-    border: none;
-    width:50rem;
-    margin-left: 2rem;
-    margin-bottom: 5rem;
-}
-.accordionItem{
-    background: white;
-    border: 0.8px solid rgba(128,128,128, 0.143);
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-.accordionItem.expanded{
-    box-shadow: var(--shadow);
-    border-radius: 6px;
-}
-.accordionButton{
-    background: white;
-    padding: 1rem;
-    width: 100%;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.icon{
-    padding: 10px;
-    background: #eeeeff;
-    border-radius: 5px;
-    
-}
-.icon:hover{
-    background-color: #dfe4ea;
-}
-.icon svg{
-    fill : var(--blue);
-}
-
-.accordionButton .primaryText{
-    font-size: 1.1rem;
-} */
+  @media (max-width: 768px) { /* Adjust this breakpoint as needed */
+    .valuecards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .valuecard {
+      
+      margin-bottom: 1rem; 
+      
+    }
+    .text-gradient {
+      margin-left: 1rem; /* Adjust the margin for smaller screens */
+    }
+  
+    .secondaryText {
+      margin-left: 0.5rem; /* Adjust the margin for smaller screens */
+      margin-bottom: 2rem; /* Reduce the bottom margin for smaller screens */
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+  }
+  
+  

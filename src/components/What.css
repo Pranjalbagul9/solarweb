@@ -6,3 +6,28 @@
     background-position: center;
     background-repeat: no-repeat; 
 }
+.what{
+   overflow:hidden; 
+}
+.whatpara{
+    /* margin-left:8rem; */
+    display:flex;
+    justify-content:center;
+    text-align: justify;
+    /* max-width: 80rem; */
+}
+.whatpara h5{
+    text-align:justify;
+    padding:6rem;
+    color:black;
+}
+@media (max-width: 768px) {
+    .whatpara{
+        margin-left: 0;
+        margin-right: 0;
+        padding:0;
+    }
+    .whatpara h5{
+        padding: 1.5rem;
+    }
+}

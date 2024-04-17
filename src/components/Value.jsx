@@ -33,37 +33,23 @@ AOS.init();
     <section className='value-wrapper wrapper'>
           <div style={{marginTop:'5rem'}}>
             <h1 className=''style={{textAlign:'center',fontSize:'2.5rem',color:'#009432',fontWeight:'500'}}> Our Values</h1>
-            <hr style={{color:' #c23616',border:'1px solid',width:'80%',margin:'0 auto'}}/>
+            <div style={{color:' #c23616',border:'1px solid',width:'80%',margin:'0 auto'}}></div>
             </div>     
         <div className='paddings innerWidth 
-        flexcenter value-container'>
-          
-            {/* <div className='value-left'>
-              <motion.div 
-              initial={{y:'2rem', opacity:0}}
-              animate={scrollV > 0 ? { y: 0, opacity: 1 } : {}}
-              transition={{
-                  duration:4,
-                  type: "linear"
-              }}
-              className='image-con'>
-                    <img src={img} alt="" />
-              </motion.div>
-            </div> */}
-           
+        flexcenter value-container'> 
             <div 
              data-aos="fade-right"
              data-aos-offset="300"
              data-aos-easing="ease-in-sine"
             className="flexColStart value-right">
                 
-                <span className='text-gradient'style={{fontSize:'1.8rem',marginLeft:'28rem',fontWeight:'600'}}> Value We Give to You</span>
-                <h1 className='secondaryText'style={{color:'black',fontSize:'large',marginBottom:'4rem',marginLeft:'20rem'}}>
+                <span className='text-gradient'> Value We Give to You</span>
+                <h1 className='secondaryText'>
                     We always ready to help by providing the best 
                     services for you.
                 </h1>
-                <div className="cards">
-                <div className="card red">
+                <div className="cards valuecards">
+                <div className="card red valuecard">
                 <img src={sus} alt="" />
                 <p className="tip">Sustainability</p>
                 <p className="second-text1">
@@ -98,87 +84,6 @@ AOS.init();
                     </p>
                 </div>
                 </div>
-
-                
-                {/* <Accordion
-                className='accordion'
-                allowMultipleExpanded={true}
-                preExpanded={show}
-                
-                >
-                    
-                    <AccordionItem className={`accordionItem ${className}`}>
-                <AccordionItemHeading>
-                    <AccordionItemButton className='flexCenter accordionButton'>
-                        <div className='flexCenter icon'>
-                        <HiShieldCheck/>
-                        </div>
-                        <span className='primaryText'>
-                        Sustainability
-                        </span>
-                        <div className='flexCenter icon'>
-                            <MdOutlineArrowDropDown size={20}/>
-                        </div>
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                    We are dedicated to promoting sustainability and 
-                    environmental responsibility in everything we do.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem className='accordionItem'>
-                <AccordionItemHeading>
-                    <AccordionItemButton className='flexCenter accordionButton'>
-                        <div className='flexCenter icon'>
-                        <HiShieldCheck/>
-                        </div>
-                        <span className='primaryText'>
-                        	Innovation 
-                        </span>
-                        <div className='flexCenter icon'>
-                            <MdOutlineArrowDropDown size={20}/>
-                        </div>
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                    We strive to stay at the forefront of technological
-                     advancements in the renewable energy industry.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem className='accordionItem'>
-                <AccordionItemHeading>
-                    <AccordionItemButton className='flexCenter accordionButton'>
-                    <AccordionItemState>
-                        {({ expanded }) =>
-                          expanded
-                            ? setClassName("expanded")
-                            : setClassName("collapsed")
-                        }
-                      </AccordionItemState>
-                        <div className='flexCenter icon'>
-                        <HiShieldCheck/>
-                        </div>
-                        <span className='primaryText'>
-                        	Customer Satisfaction
-                        </span>
-                        <div className='flexCenter icon'>
-                            <MdOutlineArrowDropDown size={20}/>
-                        </div>
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                     We prioritize customer satisfaction and are committed to delivering
-                     high-quality solutions and exceptional service.
-                    </p>
-                </AccordionItemPanel>
-            </AccordionItem>
-
-                </Accordion> */}
             </div>
         </div>
     </section>

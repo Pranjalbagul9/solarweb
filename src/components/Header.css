@@ -1,75 +1,76 @@
-.h-container{
-    color:white;
-    background:transparent;
-    /* height:5%; */
-   
-    /* background-image: url(../img/1.jpg); */
-    
-}
 
-.h-container{
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color: white;
-}
-.h-menu{
+.navbar-nav{
     gap: 2rem;
     font-size: 1.2rem;
     font-weight: 700;
     color:black;
-    margin-right: 5rem;
+    margin-right: 2rem;
 }
-.h-menu>*:hover{
+.nav-item:hover {
     cursor: pointer;
-    color:#20bf6b;
+    color: #20bf6b;
 }
-.Cimenu{
-    
-    display:none;
-}
-.h-change{
-    background-color: white;
-    color:black
-}
-.h-wrapper{
-    /* background-color: rgba(0,0,0, 0.05); */
-    /* background: transparent; */
-    /* position: relative; */
-    /* background-color: (0,0,0,0); */
-    /* width:100%; */
+.navbar{
+ 
     z-index:50;
     position:fixed;
     width:100%;
-    /* z-index:100; */
-    height: 4.5rem;
-    /* border: 0.5px solid #27ae60; */
     box-shadow: 0 8px 16px rgba(13, 11, 11, 0.2);
-    /* background-color:rgba(0,0,0,0); */
-    /* padding:1rem; */
-    /* margin-left: 5rem; */
+}
+.nav-link{
+    position: relative;
+    margin-top: 1rem;
+    /* margin-left: 1rem; */
+}
+
+.nav-link:focus::after{
+    opacity:1;
+    
+}
+.nav-link::after{
+  content:'';
+  height: 2px;
+  width:100%;
+  background:#20bf6b;
+  position: absolute;
+  left:0;
+  bottom:2px;
+  opacity:0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+ .nav-link:hover::after{
+    opacity:1;
+} 
+.navbar-toggler{
+    height:2.5rem;
+    width:3.5rem;
+    border: none;
 }
 @media (max-width: 768px){
-    .Cimenu{
-        display: block;
-        color: white;
-        cursor: pointer;
-    }
-    .h-menu{
-        color: var(--black);
-        position: absolute;
-        top:3rem;
-        right: 4rem;
-        background: white;
-        flex-direction: column;
-        font-weight: 500;
-        gap: 2rem;
-        /* padding:  3rem; */
-        border-radius: 10px;
-        align-items: flex-start;
-        box-shadow: 0px 4px 4px rgba(0,0,0, 0.05);
-        transition: all 300ms ease-in;
-    }
-
+    /* .navbar-toggler{
+        height:2.5rem;
+        width:3.5rem;
+        border: none;
+        display: flex;
+        justify-content: flex-end;
+    } */
     
+}
+
+@media (max-width: 640px) {
+    .logo{
+        width:20%;
+        height:25%;
+        margin-left:0rem;
+      }
+
+  }
+
+  @media (min-width: 640px) {
+  .logo{
+    width:6%;
+    height:4%;
+    margin-left:3rem;
+  }
 }

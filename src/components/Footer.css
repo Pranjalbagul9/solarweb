@@ -19,11 +19,122 @@
 }
 .f-right{
     /* box-shadow: 0 8px 16px rgba(13, 11, 11, 0.2); */
-    padding: 1rem;
-    
-    /* height:10%; */
+ padding: 1rem;
+     /* height:10%; */
 }
 .f-wrapper{
     background-color:#353b48;
     
+}
+.Footer{
+    background-color: white;
+    padding: 2rem 0;
+}
+.ft-1 h4{
+    color:#087830;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.footer-icons{
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+.ft-1 p{
+    padding: 0rem 1rem 0.8rem 1rem;
+    font-weight: 500;
+}
+.ft-2 h4{
+    color:#087830;
+    font-weight: 600;
+}
+.ft-3 h4{
+    color:#087830;
+    font-weight: 600;
+}
+.ft-4 h4{
+    color:#087830;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.ft-2 ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0.5rem;
+}
+.ft-2 ul li{
+    padding: 0.35rem 0;
+    font-weight: 500;
+}
+.ft-3 p{
+    font-weight: 500;
+    /* padding:0.3rem */
+}
+.ft-3 p{
+    font-weight: 500;
+    /* padding:0.3rem; */
+    font-size: 1.1rem;
+    
+}
+.footer-icons i:hover{
+    background:#006B3C ;
+    color:white;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.footer-icons i{
+     padding:0.5rem 0.8rem; 
+     margin:0 0.2rem;
+     background: #D0F0C0 ;
+     color:black;
+     border-radius: 50%;
+    
+}
+.logo1{
+    height: 6rem;
+    width:10rem;
+}
+.logo1 p{
+    text-align: justify;
+    font-size: large;
+}
+.iconsfooter{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.connectwithus{
+    text-align: center;
+}
+.footer-icons{
+    justify-content: left;
+    margin-top: 3px;
+    margin-left: 4.5rem;
+}
+@media only screen and (max-width: 768px){
+    .ft-2 h4,ul{
+        text-align: left;
+        margin-left: 1rem;
+    }
+    .ft-3 h4{
+        text-align: left;
+        margin-left: 1rem;
+    }
+    .ft-3 p{
+        margin-left: 1rem;
+    }
+    .ft-4 h4{
+        text-align: left;
+        margin-left: 1rem;
+    }
+    .ft-2 li{
+        margin-left: 1rem;
+    }
+    .ft-1 h4{
+        text-align:left;
+        margin-left: 1rem;
+    }
+    .iconsfooter{
+        margin-right: 15rem;
+    }
+
 }

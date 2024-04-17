@@ -24,10 +24,11 @@ const Main = () => {
   id="carouselExampleSlidesOnly"
   className="carousel slide"
   data-bs-ride="carousel"
+  data-bs-interval="2000"
 >
   <div className="carousel-inner" >
-    <div className="carousel-item active" style={{height:'45rem'}}>
-      <img src={solar} className="d-block w-100" alt="..." />
+    <div className="carousel-item active">
+      <img src={solar} className="d-block image-data w-100" alt="..." />
       <div class="carousel-caption d-none d-md-block" style={{marginBottom:'26rem'}}>
         <h1 className="gradient-text"style={{fontSize:'3.6rem'}}>Welcome to Smart Tech Solutions !</h1>
         <div style={{backgroundColor:'#6ab04c',opacity:'0.8'}}>
@@ -36,8 +37,8 @@ const Main = () => {
         </div>
       </div>
     </div>
-    <div className="carousel-item" style={{height:'45rem'}}>
-  <img src={solar2} className="d-block w-100" alt="..." />
+    <div className="carousel-item">
+  <img src={solar2} className="d-block image-data w-100" alt="..." />
   <div style={{ position: 'relative', }}>
     <div className="overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.2)' }}></div>
     <div className="carousel-caption d-none d-md-block" style={{ marginBottom: '8rem',backgroundColor:'white',opacity:'0.8' }}>
@@ -49,8 +50,8 @@ const Main = () => {
   </div>
 </div>
 
-    <div className="carousel-item"style={{height:'45rem'}}>
-      <img src={solar3} className="d-block w-100" alt="..." />
+    <div className="carousel-item">
+      <img src={solar3} className="d-block image-data w-100" alt="..." />
       <div className="carousel-caption d-none d-md-block" style={{  }}>
         <div style={{backgroundColor:''}}>
       <p className="" style={{ fontSize: '2.6rem', color: '#0a3d62',fontWeight:'500',marginBottom:'25rem' }}>
@@ -59,8 +60,8 @@ const Main = () => {
       </div>
     </div>
     </div>
-    <div className="carousel-item"style={{height:'45rem'}}>
-      <img src={solar5} className="d-block w-100" alt="..." />
+    <div className="carousel-item">
+      <img src={solar5} className="d-block image-data w-100" alt="..." />
       <div className="carousel-caption d-none d-md-block" style={{ }}>
         <div style={{backgroundColor:'#FFCA89',opacity:'0.7'}}>
       <p className="" style={{ fontSize: '2.4rem', color: '#2c2c54',fontWeight:'700',marginBottom:'29rem'}}>
@@ -70,8 +71,8 @@ const Main = () => {
       
     </div>
     </div>
-    <div className="carousel-item"style={{height:'45rem'}}>
-      <img src={solar6} className="d-block w-100" alt="..." />
+    <div className="carousel-item">
+      <img src={solar6} className="d-block image-data w-100" alt="..." />
       <div className="carousel-caption d-none d-md-block" style={{ }}>
         <div style={{backgroundColor:'white',opacity:'0.8'}}>
       <p className="" style={{ fontSize: '2.5rem', color: '#2C3A47',fontWeight:'700',marginBottom:'17rem' }}>
@@ -82,6 +83,7 @@ const Main = () => {
     </div>
   </div>
 </div>
+
 
 
     </section>
